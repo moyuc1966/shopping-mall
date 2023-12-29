@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "我的评价",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u--text": "/uni_modules/uview-ui/components/u--text/u--text",
+    "u-icon": "/uni_modules/uview-ui/components/u-icon/u-icon",
+    "u-empty": "/uni_modules/uview-ui/components/u-empty/u-empty",
+    "u-modal": "/uni_modules/uview-ui/components/u-modal/u-modal",
+    "u-loadmore": "/uni_modules/uview-ui/components/u-loadmore/u-loadmore"
+  }
+}

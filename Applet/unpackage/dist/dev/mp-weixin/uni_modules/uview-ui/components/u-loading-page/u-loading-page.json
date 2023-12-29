@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "u-transition": "/uni_modules/uview-ui/components/u-transition/u-transition",
+    "u-loading-icon": "/uni_modules/uview-ui/components/u-loading-icon/u-loading-icon"
+  },
+  "component": true
+}

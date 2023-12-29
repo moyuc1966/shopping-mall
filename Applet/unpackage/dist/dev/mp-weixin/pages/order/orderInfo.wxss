@@ -1,0 +1,131 @@
+page,
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: #F5F5F5;
+}
+.button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  padding: 8px 10px;
+  padding-top: 12px;
+  box-sizing: border-box;
+}
+.button .sta {
+  font-size: 15px;
+  color: #333;
+  position: absolute;
+  left: 10px;
+  line-height: 32px;
+}
+.button view {
+  height: 32px;
+  padding: 0 7px;
+  border-radius: 16px;
+  border: 1px solid #aaa;
+  font-size: 14px;
+  text-align: center;
+  line-height: 32px;
+  margin-left: 10px;
+}
+.button .button-pay,
+.button .button-evaluate,
+.button .button-confirm {
+  color: #00B26A;
+  background-color: #fff;
+  border-color: #00B26A;
+}
+.item {
+  width: 100%;
+  min-height: 35px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 0 12px;
+  align-items: center;
+  margin-bottom: 7px;
+}
+.item .label {
+  width: 84px;
+  line-height: 35px;
+  font-size: 14px;
+  color: #333;
+}
+.item .value {
+  font-size: 14px;
+  color: #aaa;
+  width: calc(100% - 90px);
+  text-align: right;
+}
+.item .value .copy {
+  color: #333;
+  font-size: 14px;
+  display: inline-block;
+  margin-left: 3px;
+}
+.price {
+  color: #333;
+  font-size: 15px;
+  display: inline-block;
+  font-weight: bold;
+}
+.price .do {
+  font-size: 13px;
+  display: inline-block;
+}
+.content {
+  width: calc(100% - 20px);
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  min-height: 100px;
+  box-sizing: border-box;
+  padding: 20px 0;
+}
+.content .info-product {
+  width: 100%;
+  display: flex;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e1e1e1;
+  flex-wrap: wrap;
+}
+.content .info-product image {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+.content .info-product .info-content {
+  width: calc(100% - 110px);
+}
+.content .info-product .info-content .name {
+  font-size: 15px;
+  color: #333;
+  line-height: 25px;
+}
+.content .info-product .info-content .des {
+  font-size: 13px;
+  color: #aaa;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.content .info-product .price {
+  width: 100%;
+  color: red;
+  font-size: 20px;
+  font-weight: 300;
+  display: inline-block;
+}
+.content .info-product .price .do {
+  font-size: 14px;
+  display: inline-block;
+}
+

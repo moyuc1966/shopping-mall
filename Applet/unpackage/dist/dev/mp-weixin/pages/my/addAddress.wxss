@@ -1,0 +1,77 @@
+.button {
+  width: 80%;
+  height: 40px;
+  border-radius: 20px;
+  position: fixed;
+  bottom: 35px;
+  left: 10%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  background-color: #C7EEE6;
+  color: #47c8ac;
+  z-index: 10000;
+}
+.editButton {
+  width: 100%;
+  position: fixed;
+  bottom: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.editButton .b_edit {
+  width: 60%;
+  position: relative;
+  left: 0;
+}
+.editButton .del {
+  width: calc(40% - 10px);
+  position: relative;
+  left: 0;
+  margin-right: 10px;
+  color: #e75b2c;
+  background-color: #F8CDBF;
+}
+.setDef {
+  display: block;
+  margin-top: 15px;
+  width: 100%;
+  padding-right: 20px;
+  text-align: right;
+  font-size: 15px;
+  color: #47c8ac;
+  box-sizing: border-box;
+}
+.item {
+  width: 100%;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+  align-items: center;
+}
+.item .label {
+  display: block;
+  margin-right: 8px;
+  font-weight: bold;
+  color: #333;
+  width: 80px;
+}
+.item .value {
+  min-height: 40px;
+  padding: 3px 5px;
+  background-color: #F5F6F8;
+  border-radius: 5px;
+  width: calc(100% - 80px);
+}
+.other {
+  align-items: flex-start;
+}
+.other .value {
+  padding: 8px 5px;
+}
+

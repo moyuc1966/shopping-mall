@@ -1,0 +1,1 @@
+<view><view><image class="scc" src="/static/scc.png"></image><view class="resuil">下单成功</view></view><view data-event-opts="{{[['tap',[['back',['$event']]]]]}}" class="btn" bindtap="__e">返回首页</view></view>

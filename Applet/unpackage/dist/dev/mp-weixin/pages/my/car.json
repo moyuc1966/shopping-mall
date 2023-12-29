@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "我的收藏",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u--text": "/uni_modules/uview-ui/components/u--text/u--text",
+    "u-icon": "/uni_modules/uview-ui/components/u-icon/u-icon",
+    "u-empty": "/uni_modules/uview-ui/components/u-empty/u-empty",
+    "u-modal": "/uni_modules/uview-ui/components/u-modal/u-modal"
+  }
+}

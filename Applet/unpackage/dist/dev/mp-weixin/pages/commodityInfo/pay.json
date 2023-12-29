@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "确认订单",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-loading-page": "/uni_modules/uview-ui/components/u-loading-page/u-loading-page",
+    "u-popup": "/uni_modules/uview-ui/components/u-popup/u-popup",
+    "u-empty": "/uni_modules/uview-ui/components/u-empty/u-empty"
+  }
+}

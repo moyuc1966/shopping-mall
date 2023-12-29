@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "搜索商品",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-search": "/uni_modules/uview-ui/components/u-search/u-search",
+    "u-tag": "/uni_modules/uview-ui/components/u-tag/u-tag",
+    "u--text": "/uni_modules/uview-ui/components/u--text/u--text",
+    "u-loadmore": "/uni_modules/uview-ui/components/u-loadmore/u-loadmore"
+  }
+}

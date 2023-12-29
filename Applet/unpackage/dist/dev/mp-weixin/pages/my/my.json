@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "我的",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#47C8AC",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "u-loading-page": "/uni_modules/uview-ui/components/u-loading-page/u-loading-page",
+    "u-popup": "/uni_modules/uview-ui/components/u-popup/u-popup",
+    "u-icon": "/uni_modules/uview-ui/components/u-icon/u-icon",
+    "u-badge": "/uni_modules/uview-ui/components/u-badge/u-badge",
+    "u-modal": "/uni_modules/uview-ui/components/u-modal/u-modal"
+  }
+}

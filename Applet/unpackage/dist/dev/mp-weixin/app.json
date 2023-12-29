@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/search",
+    "pages/commodityInfo/commodityInfo",
+    "pages/my/my",
+    "pages/classification/classification",
+    "pages/classification/classificationAll",
+    "pages/order/order",
+    "pages/order/orderInfo",
+    "pages/my/coupon",
+    "pages/my/customer",
+    "pages/my/car",
+    "pages/my/address",
+    "pages/my/evaluate",
+    "pages/my/addAddress",
+    "pages/commodityInfo/comment",
+    "pages/commodityInfo/recommend",
+    "pages/commodityInfo/pay",
+    "pages/commodityInfo/payok",
+    "pages/my/addEvaluate"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "如东甄选",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#46CBB3",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/index_r.png",
+        "selectedIconPath": "static/index.png",
+        "text": "商城"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "static/my_r.png",
+        "selectedIconPath": "static/my.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

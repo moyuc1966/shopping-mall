@@ -1,0 +1,23 @@
+
+.box {
+    width: 620rpx;
+    height: 620rpx;
+    margin: 3px auto;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.title {
+    display: block;
+    line-height: 30px;
+    padding-left: 25px;
+    font-size: 15px;
+    color: #A2ADC1;
+}
+.button {
+    width: 160px;
+    display: block;
+    margin: 10px auto;
+    background-color: #00B26A;
+    color: #fff;
+}
+

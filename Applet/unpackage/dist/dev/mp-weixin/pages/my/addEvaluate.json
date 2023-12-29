@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "发布评价",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u--text": "/uni_modules/uview-ui/components/u--text/u--text",
+    "u-rate": "/uni_modules/uview-ui/components/u-rate/u-rate"
+  }
+}

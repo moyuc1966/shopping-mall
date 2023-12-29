@@ -1,0 +1,33 @@
+.search-box {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.box {
+  width: 100%;
+  display: flex;
+  padding: 12px 7px;
+  padding-top: 15px;
+  background: #fff;
+  flex-wrap: wrap;
+}
+.box .item {
+  padding: 0 6px;
+  margin-left: 8px;
+  margin-bottom: 25px;
+}
+.box .item image {
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  margin: 0 auto;
+  display: block;
+}
+.box .item text {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 14px;
+}
+

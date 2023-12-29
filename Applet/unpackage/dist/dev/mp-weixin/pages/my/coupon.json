@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "我的优惠券",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-sticky": "/uni_modules/uview-ui/components/u-sticky/u-sticky",
+    "u-empty": "/uni_modules/uview-ui/components/u-empty/u-empty",
+    "u-loadmore": "/uni_modules/uview-ui/components/u-loadmore/u-loadmore"
+  }
+}

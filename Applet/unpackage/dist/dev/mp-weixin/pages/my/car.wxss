@@ -1,0 +1,54 @@
+page,
+._main {
+  width: 100%;
+  height: 100%;
+  background-color: #F5F5F5;
+}
+page .item,
+._main .item {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  display: flex;
+  margin-bottom: 15px;
+}
+page .item .del,
+._main .item .del {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -5px;
+  right: 15px;
+  font-size: 13px;
+  color: #aaa;
+}
+page .item image,
+._main .item image {
+  width: 90px;
+  height: 90px;
+  display: block;
+  margin-right: 10px;
+}
+page .item .info,
+._main .item .info {
+  position: relative;
+  width: calc(100% - 110px);
+}
+page .item .info .pre,
+._main .item .info .pre {
+  font-size: 13px;
+  color: #aaa;
+  display: block;
+}
+page .item .info .price,
+._main .item .info .price {
+  font-size: 17px;
+  color: red;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+

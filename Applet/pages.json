@@ -1,0 +1,168 @@
+{
+    "easycom": {
+        "^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+    },
+    "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+        {
+            "path": "pages/index/index",
+            "style": {
+                "navigationBarTitleText": "如东甄选",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#47C8AC",
+                "navigationBarTextStyle": "white"
+            }
+        },
+        {
+            "path": "pages/index/search",
+            "style": {
+                "navigationBarTitleText": "搜索商品",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/commodityInfo/commodityInfo",
+            "style": {
+                "navigationBarTitleText": "商品详情",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/my/my",
+            "style": {
+                "navigationBarTitleText": "我的",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#47C8AC",
+                "navigationBarTextStyle": "white"
+            }
+        },
+        {
+            "path": "pages/classification/classification",
+            "style": {
+                "navigationBarTitleText": "商品分类",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/classification/classificationAll",
+            "style": {
+                "navigationBarTitleText": "全部分类",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/order/order",
+            "style": {
+                "navigationBarTitleText": "我的订单",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/order/orderInfo",
+            "style": {
+                "navigationBarTitleText": "订单详情",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/my/coupon",
+            "style": {
+                "navigationBarTitleText": "我的优惠券",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/my/customer",
+            "style": {
+                "navigationBarTitleText": "联系客服",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/my/car",
+            "style": {
+                "navigationBarTitleText": "我的收藏",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/my/address",
+            "style": {
+                "navigationBarTitleText": "收货地址",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/my/evaluate",
+            "style": {
+                "navigationBarTitleText": "我的评价",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/my/addAddress",
+            "style": {
+                "navigationBarTitleText": "编辑收货地址",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/commodityInfo/comment",
+            "style": {
+                "navigationBarTitleText": "商品评价",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/commodityInfo/recommend",
+            "style": {
+                "navigationBarTitleText": "商品详情",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/commodityInfo/pay",
+            "style": {
+                "navigationBarTitleText": "确认订单",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/commodityInfo/payok",
+            "style": {
+                "navigationBarTitleText": "下单成功",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/my/addEvaluate",
+            "style": {
+                "navigationBarTitleText": "发布评价",
+                "enablePullDownRefresh": false
+            }
+        }
+
+    ],
+    "globalStyle": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "如东甄选",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8"
+    },
+    "uniIdRouter": {},
+    "tabBar": {
+        "color": "#7A7E83",
+        "selectedColor": "#46CBB3",
+        "borderStyle": "black",
+        "list": [{
+            "pagePath": "pages/index/index",
+            "iconPath": "static/index_r.png",
+            "selectedIconPath": "static/index.png",
+            "text": "商城"
+        }, {
+            "pagePath": "pages/my/my",
+            "iconPath": "static/my_r.png",
+            "selectedIconPath": "static/my.png",
+            "text": "我的"
+        }]
+    }
+}

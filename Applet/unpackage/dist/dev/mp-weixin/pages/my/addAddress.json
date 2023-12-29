@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "编辑收货地址",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-modal": "/uni_modules/uview-ui/components/u-modal/u-modal"
+  }
+}

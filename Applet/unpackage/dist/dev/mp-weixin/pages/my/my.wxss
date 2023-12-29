@@ -1,0 +1,175 @@
+.login-no .def-no {
+  width: 72px;
+  height: 72px;
+  display: block;
+  margin: 30px auto;
+  margin-top: 35%;
+}
+.login-no .login {
+  width: 150px;
+  background-color: #00B26A;
+  color: #fff;
+  display: block;
+  margin: 10px auto;
+}
+.button {
+  width: 90%;
+  height: 45px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 14px;
+  background-color: #C7EEE6;
+  color: #47c8ac;
+  z-index: 10000;
+  margin-left: 5%;
+  margin-top: 30px;
+}
+.edittitle {
+  display: block;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 5%;
+}
+.editname {
+  display: block;
+  width: 90%;
+  box-sizing: border-box;
+  padding: 2px 8px;
+  margin-top: 8px;
+  border-bottom: 1px solid #e1e1e1;
+  background: #eeeeee;
+  line-height: 45px;
+  height: 45px;
+  margin-left: 5%;
+  border-radius: 3px;
+  color: #333;
+}
+.list {
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 4px;
+  width: 690rpx;
+  margin-left: 30rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 28px;
+}
+.list .list-item {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 55px;
+  box-sizing: border-box;
+  padding-left: 5px;
+}
+.list .list-item .list-icon {
+  width: 18px;
+  height: 18px;
+}
+.list .list-item .name {
+  font-size: 15px;
+  color: #A2ADC1;
+  display: block;
+  margin-left: 8px;
+}
+.list .list-item .next {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 15px;
+}
+.model {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  width: calc(100% - 12px);
+  margin-top: 12px;
+}
+.model .model-item {
+  position: relative;
+  width: 100%;
+}
+.model .model-item image {
+  width: 25px;
+  height: 25px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+.model .model-item .name {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  color: #47C8AC;
+}
+.gphone {
+  width: 150px;
+  background-color: #00B26A;
+  color: #fff;
+  display: block;
+  margin: 10px auto;
+  margin-top: 20px;
+}
+.phoneTitle {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 32px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  font-size: 17px;
+}
+.bg {
+  width: 100%;
+  height: 90px;
+  background-color: #47C8AC;
+  position: fixed;
+  z-index: -1;
+}
+.my-info {
+  background-color: #fff;
+  width: 700rpx;
+  border-radius: 4px;
+  height: 170px;
+  margin-left: 25rpx;
+  padding-left: 12px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.my-info .info {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  position: relative;
+}
+.my-info .edit {
+  position: absolute;
+  right: 30px;
+}
+.my-info image {
+  width: 60px;
+  height: 60px;
+  display: block;
+  border: 1px solid #e1e1e1;
+  border-radius: 100%;
+}
+.my-info .my-info-content {
+  margin-left: 10px;
+}
+.my-info .my-info-content .name {
+  font-size: 17px;
+  color: #333;
+  display: block;
+  margin-bottom: 1px;
+}
+.my-info .my-info-content .phone {
+  font-size: 14px;
+  color: #aaa;
+}
+

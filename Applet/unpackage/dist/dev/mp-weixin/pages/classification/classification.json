@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "商品分类",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-loading-page": "/uni_modules/uview-ui/components/u-loading-page/u-loading-page",
+    "u-sticky": "/uni_modules/uview-ui/components/u-sticky/u-sticky",
+    "u-icon": "/uni_modules/uview-ui/components/u-icon/u-icon",
+    "u--text": "/uni_modules/uview-ui/components/u--text/u--text",
+    "u-empty": "/uni_modules/uview-ui/components/u-empty/u-empty",
+    "u-loadmore": "/uni_modules/uview-ui/components/u-loadmore/u-loadmore"
+  }
+}

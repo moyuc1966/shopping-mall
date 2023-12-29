@@ -1,0 +1,18 @@
+{
+  "navigationBarTitleText": "如东甄选",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#47C8AC",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "u-loading-page": "/uni_modules/uview-ui/components/u-loading-page/u-loading-page",
+    "u-search": "/uni_modules/uview-ui/components/u-search/u-search",
+    "u-notice-bar": "/uni_modules/uview-ui/components/u-notice-bar/u-notice-bar",
+    "u-sticky": "/uni_modules/uview-ui/components/u-sticky/u-sticky",
+    "u-icon": "/uni_modules/uview-ui/components/u-icon/u-icon",
+    "u--image": "/uni_modules/uview-ui/components/u--image/u--image",
+    "u-loading-icon": "/uni_modules/uview-ui/components/u-loading-icon/u-loading-icon",
+    "u--text": "/uni_modules/uview-ui/components/u--text/u--text",
+    "u-modal": "/uni_modules/uview-ui/components/u-modal/u-modal",
+    "u-loadmore": "/uni_modules/uview-ui/components/u-loadmore/u-loadmore"
+  }
+}
