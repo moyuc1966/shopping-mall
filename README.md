@@ -28,7 +28,7 @@ let config = {
 }
 ```
 微信支付相关配置不配置将无法进行支付，也无法关闭超时订单，系统域名是指后端api地址，可以是ip可以是域名，不携带末尾/<br>
-申请证书，放置在/key目录下，申请方法参考官方文档[《接入前准备》](https://pay.weixin.qq.com/wiki/doc/apiv3/open/pay/chapter2_8_1.shtmlm)
+申请证书，放置在/key目录下，申请方法参考官方文档[《接入前准备》](https://pay.weixin.qq.com/wiki/doc/apiv3/open/pay/chapter2_8_1.shtml)
 ### 3. 启动项目
 在api后端根目录执行`node index.js` <br> 然后输出`Service started successfully, running on http://localhost:3200`表示启动成功，然后访问`//api/public/product`接口看是否能正常输出
 
