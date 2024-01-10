@@ -14,6 +14,10 @@ CREATE TABLE `user` (
     PRIMARY KEY (`id`),
     UNIQUE KEY `user_uuid_unique` (`uuid`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 2 DEFAULT CHARSET = utf8mb4 COMMENT = '用户表';
+
+
+INSERT INTO user (id, uuid,username,openid,session_key,phone,status,create_time) VALUES (0, 'ABCDEF1234567890','系统管理员','system_init_info','123456789qwertyuiop==','12345678901',1,now());
+
 -- 创建用户地址表
 CREATE TABLE `user_address` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -92,7 +96,7 @@ CREATE TABLE `product_comment` (
     PRIMARY KEY (`id`),
     KEY `product_comment_product_id_foreign` (`product_id`),
     CONSTRAINT `product_comment_product_id_foreign` FOREIGN KEY (`product_id`) REFERENCES `product` (`id`),
-    CONSTRAINT `product_comment_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)
+    CONSTRAINT `product_comment_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) -- 异常，删除
 ) ENGINE = InnoDB AUTO_INCREMENT = 3 DEFAULT CHARSET = utf8mb4 COMMENT = '商品评价表';
 -- 创建商品分类表
 CREATE TABLE `product_category` (

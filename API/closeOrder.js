@@ -50,7 +50,7 @@ async function closeTimeoutOrders() {
         }
 
         //优惠券关闭，将coupon表中end_time小于当前时间的数据的status字段值改为2
-        const updateCouponQuery = 'UPDATE coupon SET status = 2 WHERE status = 1 AND end_time < NOW();';
+        const updateCouponQuery = 'UPDATE coupon SET status = 2 WHERE status = 0 AND end_time < NOW();';
         await db.query(updateCouponQuery);
 
 

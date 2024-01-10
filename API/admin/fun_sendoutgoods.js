@@ -1,11 +1,16 @@
 const request = require('request')
 const fs = require('fs')
 
-//获取token.txt中的token
-let token = fs.readFileSync('./token.txt').toString()
-
 const sendMessage = require('./fun_sendMessage.js')
 
+//获取token.txt中的token
+let token
+try{
+    token = fs.readFileSync('./token.txt').toString()
+}catch (error){
+    console.log(error)
+    token = ''
+}
 //发货功能增加微信发货对接
 
 /*
@@ -19,15 +24,27 @@ let express_name = '顺丰速运' //快递公司名称
 */
 
 module.exports = function sendModel(orderno, transaction_id, tracking_no, item_desc, phone, openid, express_name) {
+    try{
     //请求接口，获取快递公司名称对应的快递公司编码
     request.get({
         url: 'https://api.weixin.qq.com/cgi-bin/express/business/delivery/getall?access_token=' + token,
     }, (err, req, body) => {
-        let list = JSON.parse(body).data
+        let list = []
+        list = JSON.parse(body).data
+        
+        if(list.length == 0){
+            sendMessage('发货异常', '微信推送发货消息异常，请前往小程序后台手动发货，以免影响资金结算，异常原因：后端错误，获取物流支持列表失败', 'error', orderno);
+        }
+        
+        let deliveryID = []
         //根据公司名称，查找对应的公司ID
-        let deliveryID = list.filter(item => item.delivery_name === express_name)[0].delivery_id;
+        deliveryID = list.filter(item => item.delivery_name === express_name);
+        
+        if(deliveryID.length == 0){
+            sendMessage('发货异常', '微信推送发货消息异常，请前往小程序后台手动发货，以免影响资金结算，异常原因：物流公司错误，无法查找公司id', 'error', orderno);
+        }
 
-        let express_company = deliveryID
+        let express_company = deliveryID[0].delivery_id
 
         const date = new Date();
         const time = date.getFullYear() + '-' +
@@ -58,6 +75,11 @@ module.exports = function sendModel(orderno, transaction_id, tracking_no, item_d
                 openid: openid
             }
         }
+        
+        
+        
+        // console.log(data)
+        
         request.post({
             url: 'https://api.weixin.qq.com/wxa/sec/order/upload_shipping_info?access_token=' + token,
             json: true,
@@ -73,4 +95,8 @@ module.exports = function sendModel(orderno, transaction_id, tracking_no, item_d
         })
 
     })
+    }catch(err){
+        console.log(err)
+        sendMessage('发货异常', '微信推送发货消息异常，请前往小程序后台手动发货，以免影响资金结算，异常原因：'+err, 'error', orderno);
+    }
 }
