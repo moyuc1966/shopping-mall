@@ -2,13 +2,14 @@
 一套基础功能完整的商城小程序，支付已对接，功能完整，后端使用`node+mysql+express`技术栈，小程序使用`uniapp`开发，管理员后台使用`vue+element`开发
 <br><br>
 ***此开源版本为初期dome版本，非已上线的正式版，可能存在bug（包括致命性错误），请在使用前严格测试，如若发生任何损失，于本人无关；此dome版本也不会同步正式版功能与更新，只是单独更新为一个项目。***
-<br>
-![小程序预览](https://github.com/moyuc1966/shopping-mall/blob/main/images/p1.png "小程序预览") 
-<br>
-## 基本功能
 <br><br>
+![小程序预览](https://github.com/moyuc1966/shopping-mall/blob/main/images/p1.png "小程序预览") 
+<br><br>
+## 基本功能
+
 用户管理（封禁，评价，收货地址），商品管理（信息，销量，评价），商品分类管理，小程序首页轮播图，小程序公告设置，小程序首页推荐分类设置，订单管理，微信订单发货，订单退款，订单评价（可删评价），商品收藏，优惠券模块
-<br>商品收藏初步是按购物车设计的，但是最后实现的功能是收藏，有能力可修改为购物车，api文档位于/Api/
+<br>商品收藏初步是按购物车设计的，但是最后实现的功能是收藏，有能力可修改为购物车，api文档位于`/Api/商城项目api文档.pdf`
+<br><br>
 ![管理后台](https://github.com/moyuc1966/shopping-mall/blob/main/images/p3.png "管理后台") 
 
 # 商城系统配置及启动手册
