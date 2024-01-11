@@ -15,6 +15,10 @@ request.get({
         console.log(err)
         return
     }
+
+    if(!body.access_token){
+        return console.log('获取access_token失败，请检查appid和secret是否正确') 
+    }
     let token = body.access_token
     //写入./token.txt
     fs.writeFile('./token.txt', token, (err) => {
