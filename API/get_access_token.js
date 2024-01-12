@@ -2,6 +2,10 @@ const config = require('./pay_config.js');
 const request = require('request')
 const fs = require('fs')
 
+if (!config.appid || !config.secret) {
+    return console.log('请先配置好pay_config.js')
+}
+
 request.get({
     uri: 'https://api.weixin.qq.com/cgi-bin/token',
     json: true,
@@ -16,8 +20,8 @@ request.get({
         return
     }
 
-    if(!body.access_token){
-        return console.log('获取access_token失败，请检查appid和secret是否正确') 
+    if (!body.access_token) {
+        return console.log('获取access_token失败，请检查appid和secret是否正确')
     }
     let token = body.access_token
     //写入./token.txt

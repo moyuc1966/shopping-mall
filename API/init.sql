@@ -208,7 +208,7 @@ CREATE TABLE `system_message` (
     `content` varchar(255) NOT NULL COMMENT '消息内容',
     `create_time` datetime NOT NULL COMMENT '创建时间',
     `type` varchar(10) DEFAULT 'error' COMMENT '消息类型，success，error',
-    `read` tinyint(3) NOT NULL DEFAULT '0' COMMENT '是否已读，0未读，1已读',
+    `isread` tinyint(3) NOT NULL DEFAULT '0' COMMENT '是否已读，0未读，1已读',
     `copy` varchar(255) DEFAULT NULL COMMENT '复制内容',
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB AUTO_INCREMENT = 2 DEFAULT CHARSET = utf8mb4 COMMENT = '系统消息表';
