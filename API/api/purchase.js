@@ -82,7 +82,7 @@ router.post('/create', (req, res) => {
             //获取并且格式化用户ip
             let ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress || req.socket.remoteAddress || req.connection.socket.remoteAddress;
             ip = ip.match(/\d+.\d+.\d+.\d+/);
-            ip = ip ? ip.join('.') : null;
+            ip = ip ? ip.join('.') : '获取失败';
             remark = isEmptyStr(remark) ? remark : '无';
             coupon_id = isEmptyStr(coupon_id) ? coupon_id : 0;
             count = isEmptyStr(count) ? count : 1;
