@@ -69,7 +69,7 @@ router.get('/userCount', (req, res) => {
         //获取coupon表中user_id为用户id和0且status为0，1,2的优惠券数量，其中0正常1过期2已使用
         //获取cart表中user_id为用户id的商品数量
         let queryOrderSql = `select 
-        (select count(*) from \`order\` where user_id=? and status=0 and delete_status = 0 and create_time<=date_sub(now(),interval 30 minute)) as order_status0,
+        (select count(*) from \`order\` where user_id=? and status=0 and delete_status = 0 and create_time>=date_sub(now(),interval 30 minute)) as order_status0,
         (select count(*) from \`order\` where user_id=? and status=1 and delete_status = 0) as order_status1,
         (select count(*) from \`order\` where user_id=? and status=2 and delete_status = 0) as order_status2,
         (select count(*) from \`order\` where user_id=? and status=3 and delete_status = 0) as order_status3,

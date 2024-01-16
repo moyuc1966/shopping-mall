@@ -151,7 +151,7 @@
             <view class="cang" @click="collect()">
                 加入收藏
             </view>
-            <view class="buy" @click="buy()">
+            <view class="buy" @click="spShowClick">
                 立即购买
             </view>
         </view>
