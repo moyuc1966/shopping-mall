@@ -2,8 +2,6 @@
     <view class="main">
         <u-loading-page :loading="uLoadingPageShow" loading-text="loading..."></u-loading-page>
         <view v-if="!uLoadingPageShow">
-
-
             <u-swiper :list="swiper" :autoplay="false" radius="0" height="350" :indicator="true" @click="showIcon">
             </u-swiper>
             <view class="e-info">
@@ -90,7 +88,7 @@
                 </view>
                 <view class="select_sp_num">
                     <text class="title">选择数量</text>
-                    <u-number-box v-model="specification.count"></u-number-box>
+                    <u-number-box v-model="spCount" @change="spCountChange"></u-number-box>
                 </view>
                 <view class="select_sp_model">
                     <view class="left" @click="collect()">
@@ -151,6 +149,7 @@
             <view class="cang" @click="collect()">
                 加入收藏
             </view>
+            <!-- <view class="buy" @click="buy()"> -->
             <view class="buy" @click="spShowClick">
                 立即购买
             </view>
@@ -182,7 +181,8 @@
                 addressShow: false,
                 com_total: 0,
                 list_t: [],
-                uLoadingPageShow: true
+                uLoadingPageShow: true,
+                spCount: 1
             }
         },
         onShow() {
@@ -309,8 +309,12 @@
             },
             sp_change(item) {
                 if (item.stock <= 0) return this.tw('此规格库存不足')
-                item.count = 1
                 this.specification = item
+                this.$set(this.specification, 'count', 1)
+                this.spCount = 1
+            },
+            spCountChange(e) {
+                this.specification.count = e.value
             },
             addressShowClick() {
                 this.addressShow = true
@@ -671,7 +675,7 @@
 
     .kuai {
         display: block;
-        width: 100%;
+        // width: 100%;
         padding-left: 45px;
         font-size: 13px;
         color: #aaa;
